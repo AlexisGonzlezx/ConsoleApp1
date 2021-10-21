@@ -6,15 +6,19 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int numero1, numero2;
+            Libro[] arregloLibros = new Libro[5];
+            for (int i = 0; i < arregloLibros.Length; i++)
+            {
+                arregloLibros[i] = new Libro();
+                arregloLibros[i].Titulo = "Adios";
+                arregloLibros[i].Autor = "Pedro";
+                arregloLibros[i].Codigo = "T2565";
+            }
 
-            Console.Write("numero 1: ");
-            numero1 = int.Parse(Console.ReadLine());
-
-            Console.Write("numero 2: ");
-            numero2 = int.Parse(Console.ReadLine());
-
-            Console.Write("resultado " + (numero1 + numero2));
+            for (int i = 0; i < arregloLibros.Length; i++)
+            {
+                Console.WriteLine(arregloLibros[i].ToString());
+            }
 
             Console.ReadKey();
         }
