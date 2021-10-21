@@ -67,5 +67,6 @@ namespace ConsoleApp1
             return " El titulo es " + titulo   +  " su autor es " + autor  +  " y su codigo es " + codigo ;
         }
         
+
     }
 }
